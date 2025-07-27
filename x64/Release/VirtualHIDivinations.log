@@ -1,0 +1,27 @@
+﻿  Building 'VirtualHIDivinations' with toolset 'WindowsKernelModeDriver10.0' and the 'Universal' target platform.
+  Stamping x64\Release\VirtualHIDivinations.inf
+  Stamping [Version] section with DriverVer=07/27/2025,4.39.34.902
+  Device.c
+  RAPHNET ADAPTER DOESN'T DO USB 3.0 SO MAYBE IF IT DOESN'T WORK I GOTTA CHANGE TS ON LINE 224
+  Driver.c
+  Queue.c
+  Generating Code...
+  VirtualHIDivinations.vcxproj -> E:\Users\megal\source\repos\VirtualHIDivinations\x64\Release\VirtualHIDivinations.sys
+  Done Adding Additional Store
+  Successfully signed: E:\Users\megal\source\repos\VirtualHIDivinations\x64\Release\VirtualHIDivinations.sys
+  
+  Driver is 'Universal'.
+  ..............................
+  Signability test complete.
+  
+  Errors:
+  None
+  
+  Warnings:
+  None
+  
+  Catalog generation complete.
+  E:\Users\megal\source\repos\VirtualHIDivinations\x64\Release\VirtualHIDivinations\virtualhidivinations.cat
+  Done Adding Additional Store
+  Successfully signed: E:\Users\megal\source\repos\VirtualHIDivinations\x64\Release\VirtualHIDivinations\virtualhidivinations.cat
+  
