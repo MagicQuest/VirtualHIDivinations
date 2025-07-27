@@ -1,3 +1,9 @@
 /.vs
 /x64/Debug/VirtualH.8A29F7EB.tlog
 /x64/Release/VirtualH.8A29F7EB.tlog
+/x64/Release/MySPC.pfx
+/x64/Release/VirtualHIDivinations/MyCA.cer
+/x64/Release/VirtualHIDivinations/MyCA.pvk
+/x64/Release/VirtualHIDivinations/MySPC.cer
+/x64/Release/VirtualHIDivinations/MySPC.pfx
+/x64/Release/VirtualHIDivinations/MySPC.pvk
