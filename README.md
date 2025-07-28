@@ -34,7 +34,7 @@ I use a continuous reader to read hid reports from the device and then use that 
  
  (**some of the things i say here could be wrong and all of these tips apply mostly to kmdf function drivers**)
 
- * Most objects usually have a related config structure that's required for the creation of that object. Objects can also have attributes like object-specific data (typically called a context space).
+ * Most objects usually have a related config structure that's required for the creation of that object. Objects can also have attributes like object-specific data (typically called a [context space](https://learn.microsoft.com/en-us/windows-hardware/drivers/wdf/framework-object-context-space)).
  * Every driver needs to create a driver object and a device object
     * Driver objects should be created in `DriverEntry` - this object represents the driver.
     * Device objects should be created in `EvtDeviceAdd` - they represent the devices your driver controls.
