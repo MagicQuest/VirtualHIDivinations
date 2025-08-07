@@ -8,7 +8,7 @@ Class=USBDevice
 ClassGuid={88BAE032-5A81-49f0-BC3D-A4FF138216D6}
 Provider=%ManufacturerName%
 CatalogFile=VirtualHIDivinations.cat
-DriverVer = 07/27/2025,4.50.27.816
+DriverVer = 07/29/2025,3.15.0.466
 PnpLockDown=1
 
 [DestinationDirs]

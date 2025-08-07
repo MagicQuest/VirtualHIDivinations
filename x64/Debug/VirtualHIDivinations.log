@@ -1,11 +1,8 @@
 ﻿  Building 'VirtualHIDivinations' with toolset 'WindowsKernelModeDriver10.0' and the 'Universal' target platform.
   Stamping x64\Debug\VirtualHIDivinations.inf
-  Stamping [Version] section with DriverVer=07/27/2025,4.50.27.816
+  Stamping [Version] section with DriverVer=07/29/2025,3.15.0.466
   Device.c
   RAPHNET ADAPTER DOESN'T DO USB 3.0 SO MAYBE IF IT DOESN'T WORK I GOTTA CHANGE TS ON LINE 224
-  Driver.c
-  Queue.c
-  Generating Code...
   VirtualHIDivinations.vcxproj -> E:\Users\megal\source\repos\VirtualHIDivinations\x64\Debug\VirtualHIDivinations.sys
   Done Adding Additional Store
   Successfully signed: E:\Users\megal\source\repos\VirtualHIDivinations\x64\Debug\VirtualHIDivinations.sys

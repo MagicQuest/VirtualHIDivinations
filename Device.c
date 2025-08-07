@@ -265,13 +265,15 @@ Return Value:
     pDeviceContext->UsbInterface = WdfUsbTargetDeviceGetInterface(pDeviceContext->UsbDevice, 0);
     if (pDeviceContext->UsbInterface == WDF_NO_HANDLE) {
         KdPrintEx((DPFLTR_IHVDRIVER_ID, DPFLTR_INFO_LEVEL, "VHID: WdfUsbTargetDeviceGetInterface failed?\n"));
+        return USBD_STATUS_INTERFACE_NOT_FOUND;
     }
     else {
         WDF_USB_PIPE_INFORMATION info;
         WDF_USB_PIPE_INFORMATION_INIT(&info);
         pDeviceContext->UsbPipe = WdfUsbInterfaceGetConfiguredPipe(pDeviceContext->UsbInterface, 0, &info);
         if (pDeviceContext->UsbPipe == WDF_NO_HANDLE) {
-            KdPrintEx((DPFLTR_IHVDRIVER_ID, DPFLTR_INFO_LEVEL, "VHID: WdfUsbInterfaceGetConfiguredPipe failed?\n"));
+            KdPrintEx((DPFLTR_IHVDRIVER_ID, DPFLTR_INFO_LEVEL, "VHID: WdfUsbInterfaceGetConfiguredPipe (pipe index 0) failed? Returning USBD_STATUS_INVALID_PIPE_HANDLE!\n"));
+            return USBD_STATUS_INVALID_PIPE_HANDLE;
         }
         //WdfUsbTargetPipeSetNoMaximumPacketSizeCheck(pDeviceContext->UsbPipe);
         WDF_USB_CONTINUOUS_READER_CONFIG_INIT(&readerConfig, VHIDEvtUsbTargetPipeReadComplete, (WDFCONTEXT)pDeviceContext, info.MaximumPacketSize); //according to uhhh
